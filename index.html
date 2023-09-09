@@ -11,16 +11,18 @@
       type="image/x-icon"
     />
   </head>
-  <body class="px-16 py-8 w-screen h-screen flex">
-    <div class="flex flex-col justify-between w-1/2 h-full">
+  <body
+    class="p-12 lg:px-16 lg:py-8 w-screen h-screen flex lg:flex-row flex-col"
+  >
+    <div class="flex flex-col justify-between lg:w-1/2 h-full w-full">
       <header class="flex gap-8">
         <div class="text-zinc-400">Work</div>
         <div class="text-zinc-400">About</div>
         <div class="text-zinc-400">Blogs</div>
       </header>
       <section>
-        <div class="text-2xl text-light-black max-w-lg">
-          <p>
+        <div class="text-2xl lg:max-w-lg mt-16 lg:mt-0">
+          <p class="text-light-black">
             I'm Asrafil, a passionate Software Developer Developer with love to
             create visually stunning and user-friendly online experiences.
           </p>
@@ -32,14 +34,18 @@
           </div>
         </div>
       </section>
-      <footer class="text-xs text-slate-300">v1.0.0 - 2023</footer>
+      <footer class="text-xs text-slate-300 lg:block hidden">
+        v1.0.0 - 2023
+      </footer>
     </div>
 
-    <div class="w-1/2 h-full flex flex-col gap-2">
+    <div class="w-full lg:w-1/2 h-full flex flex-col gap-2 mt-10 lg:mt-0">
       <div class="flex w-full gap-2">
         <div class="card">
           <p class="text-xs text-slate-text">Currently Working at</p>
-          <div class="pt-2 text-3xl font-semibold text-blue-600">BeetleHR</div>
+          <div class="pt-2 text-xl lg:text-3xl font-semibold text-blue-600">
+            BeetleHR
+          </div>
         </div>
         <div class="card">
           <p class="text-xs text-slate-text">Design to Code</p>
@@ -48,13 +54,17 @@
       </div>
 
       <div
-        class="flex flex-col pl-6 pt-4 bg-slate-75 hover:shadow-md hover:shadow-neutral-100 duration-300 rounded-lg"
+        class="flex flex-col lg:pl-6 pt-4 bg-slate-75 hover:shadow-md hover:shadow-neutral-100 duration-300 rounded-lg"
       >
-        <p class="text-xs text-slate-text text-left">Latest Project</p>
-        <img class="w-64 mx-auto" src="src/assets/mockup.png" />
+        <p class="text-xs text-slate-text text-left pl-6 lg:pl-0">
+          Latest Project
+        </p>
+        <img class="w-52 lg:w-64 mx-auto" src="src/assets/mockup.png" />
       </div>
 
-      <div class="flex w-full gap-2">
+      <div
+        class="flex w-full gap-2 lg:flex-row flex-col mt-10 lg:mt-0 pb-10 lg:pb-0"
+      >
         <div class="logo-card">
           <a href="https://dribbble.com/asrafilll"
             ><img class="w-28 mb-2" src="src/assets/dribbble_logo.png"
@@ -72,6 +82,5 @@
         </div>
       </div>
     </div>
-    <script src="src/js/anime.js"></script>
   </body>
 </html>

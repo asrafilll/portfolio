@@ -21,7 +21,7 @@
 
 @layer components {
   .card {
-    @apply bg-slate-75 shadow-sm  hover:shadow-md hover:shadow-slate-200 duration-300 shadow-slate-100 h-[108px] pl-6 w-full flex flex-col justify-center rounded-lg;
+    @apply bg-slate-75 shadow-sm  hover:shadow-md hover:shadow-slate-200 duration-300 shadow-slate-100 h-20 lg:h-[108px] px-4 lg:pl-6  w-full flex flex-col justify-center rounded-lg;
   }
 
   .cta-button {
