@@ -29,6 +29,6 @@
   }
 
   .logo-card {
-    @apply bg-slate-75 h-[108px] w-full flex items-center justify-center rounded-lg;
+    @apply bg-slate-75 h-[108px] w-full flex items-center justify-center rounded-lg shadow-sm  hover:shadow-md hover:shadow-slate-200 duration-300;
   }
 }
